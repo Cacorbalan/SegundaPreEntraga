@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 20 px;
+}
+
+.logo{
+ width: 300px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover{
+    color: violet;
+}
+
+.boton {
+    background-color: violet;
+    color: white;
+    font-weight: 800;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 2;
+}
+
+.banner{
+    background-image: url("../Img/banner.jpeg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.Imagenes {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Imagenes h2{
+   font-size: 2rem;
+   font-weight: bold;
+   color: black;
+   position: initial;
+}
+
+.shop {
+    text-align: center;
+    margin: 10vh;
+    border-radius: 50%;
+}
+
+.shop h3 {
+    color: violet;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.shop p {
+    font-size: 2rem;
+    color: black;
+    padding: 10px;
+}
+
+.imagenesinicio{
+display: flex;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shop{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.modelos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 5px;
+    box-shadow: 0px 2px 4px white (0,0,0,0.2);
+    border: 1px solid black;
+}
+
+.modelos img{
+    max-width: 100%;
+} 
+
+.modelos p{
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+
+}
+
+.modelos button{
+   background-color: violet;
+   color: black;
+   border-radius: 10px;
+   padding: 10px 20px;
+   font-size: 1rem;
+   cursor: pointer;
+   margin-top: 10px;
+}
+
+.modelos button:hover{
+   background-color: aquamarine;
+}
+main{
+    margin: 30px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px 0px;
+
+}  
+
+
+footer
+{ 
+    margin: 30px;
+    padding: 30px;
+    border-top: 1px solid black;
+    text-align: center;
+} 
+ 
+ul
+{ 
+    list-style: none;
+}  
+
+
+/*Shop*/
+
+.Stock{
+    margin: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+} 
+.imgdeproductos{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Stock p{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/*iframe*/
+iframe {
+    display: block;
+    margin: auto;
+}
+
+form{
+    margin-top:  30px; ;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input[type="text"], textarea{
+    display: block;
+    width:100% ;
+    padding: 10 px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btnenviar
+{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius:  3px;
+    font-size: 15px0;
+    margin-top: 10px;
+}
+
+/*vistas*/
+
+@media (max-width:1023px){
+    header{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+  .shop{
+    margin: 5vh;
+    font-size: 2rem;
+   }
+
+   .imagenesinicio{
+    grid-template-columns: 1fr 1fr;
+  }
+
+ .Imagenes p{
+    font-size: 2.5rem;
+  }
+
+  footer{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* vista celular*/
+
+@media(max-width:768px){
+    .imagenesinicio{
+        grid-template-columns: 1fr;
+    }
+}
+
