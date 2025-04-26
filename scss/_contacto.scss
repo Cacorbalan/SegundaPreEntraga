@@ -1,0 +1,38 @@
+/*iframe*/
+iframe {
+    display: block;
+    margin: auto;
+}
+
+form {
+    margin-top: 30px;
+    ;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: $color-negro;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10 px;
+    border: 2px solid $color-negro;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btnenviar {
+    background-color: $color-negro;
+    color: $color-blanco;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 15px0;
+    margin-top: 10px;
+}

@@ -1,0 +1,36 @@
+/*vistas*/
+
+@media (max-width:1023px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .shop {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .imagenesinicio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Imagenes p {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* vista celular*/
+
+@media(max-width:768px) {
+    .imagenesinicio {
+        grid-template-columns: 1fr;
+    }
+}

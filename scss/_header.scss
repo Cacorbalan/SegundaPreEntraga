@@ -1,0 +1,40 @@
+@mixin anclas{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    border-bottom: 1px solid $color-negro;
+    text-align: center;
+    padding: 10px 20 px;
+}
+
+.logo {
+    width: 300px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+a {
+    @include anclas;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    &:hover {
+        color: violet;
+    }
+}
+
+.boton {
+    background-color: violet;
+    color: $color-blanco;
+    font-weight: 800;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 2;
+}
